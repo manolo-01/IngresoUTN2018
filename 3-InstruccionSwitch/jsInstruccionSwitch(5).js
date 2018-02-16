@@ -4,13 +4,11 @@ function Mostrar()
 var laHora = parseInt(document.getElementById('hora').value);
 switch(laHora)
 {
+    case 7:
     case 8:
-    alert("Es de mañana");
-    break;
     case 9:
-    alert("Es de mañana");
-    break;
     case 10:
+    case 11:
     alert("Es de mañana");
     break;
     default:
