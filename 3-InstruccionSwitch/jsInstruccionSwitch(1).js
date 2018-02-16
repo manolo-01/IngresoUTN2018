@@ -2,9 +2,8 @@ function Mostrar()
 {
 //tomo el mes
 
-
 var mes;
-mes=document.getElementById("FormIngreso").value;
+mes=document.getElementById("mes").value;
 switch(mes)
 {
     case "Enero":
@@ -19,6 +18,7 @@ switch(mes)
     case "Diciembre":
     alert("Felices Fiestas!!!.");
     break;
+    default:
 }
 
 
