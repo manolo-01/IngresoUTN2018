@@ -1,13 +1,15 @@
 function Mostrar()
 {
 
-	var contador=parseInt(contador)=0;
-	var acumulador=parseInt(acumulador)=0;
-	var respuesta='si';
+	var contador=0;
+	contador=parseInt(contador);
+	var acumulador=0;
+	acumulador=parseInt(acumulador);
+	var respuesta/*=si*/;
 
 	
-	while(respuesta=="si")
-	{
+	//while(respuesta=="si")
+	do{
 
 
         acumulador=acumulador+parseInt(prompt("ingrese el valor : "+(contador+1)));
@@ -15,10 +17,10 @@ function Mostrar()
 		respuesta=prompt("quiere ingresar otro numero?");
 		while(!(respuesta=="si" || respuesta=="no"))
 		{
-			respuesta=prompt("ingreso invalido: ingrese si o no");
+			respuesta=prompt("invalido: ingrese si o no");
 		}
 
-	}
+	}while(respuesta=="si");
 
 	
 
