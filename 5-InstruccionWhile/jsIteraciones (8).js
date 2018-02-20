@@ -1,7 +1,7 @@
 function Mostrar()
 {
 
-	var contador=0;
+	var flag=0;
 	var positivo=0;
 	var negativo=1;
 	var dato=0;
@@ -17,8 +17,9 @@ function Mostrar()
 		if(dato<0)
 		negativo=negativo*dato;
 		else
-		positivo=positivo+dato;
-
+		{positivo=positivo+dato;
+			contador==1;
+		}
 		respuesta=prompt("quiere ingresar otro numero?");
 		while(!(respuesta=="si" || respuesta=="no"))
 		{
@@ -27,6 +28,8 @@ function Mostrar()
 	}while(respuesta=="si");
 
 document.getElementById("suma").value=positivo;
+if(contador==0)
+negativo=0;
 document.getElementById("producto").value=negativo;
 
 }//FIN DE LA FUNCIÓN
