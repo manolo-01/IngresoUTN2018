@@ -1,7 +1,7 @@
 function Mostrar()
 {
 
-	var contador=0;
+	var flag=0;
 	// declarar variables
 	var maximo=parseInt(maximo);
 	var minimo=minimo=parseInt(minimo);
@@ -10,16 +10,19 @@ function Mostrar()
 	//dato=parseInt(dato);
 
 	var respuesta/*="si"*/;
-        dato=parseInt(prompt("ingrese un numero"));
-		maximo=dato;
-		minimo=dato;
+       
 	//while(respuesta!="no")
 	do{
+		 dato=parseInt(prompt("ingrese un numero"));
 		
-		if(dato>maximo)
+		if(dato>maximo || flag==0)
 		maximo=dato;
-		else if(dato<minimo)
-		minimo=dato;
+		if(dato<minimo || flag==0)
+		{
+		    flag=1;
+			minimo=dato;	
+		}
+		
 
 		respuesta=prompt("quiere ingresar otro numero?");
 		while(!(respuesta=="si" || respuesta=="no"))
